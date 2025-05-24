@@ -1,0 +1,40 @@
+.grid-leaderboard{
+  width:auto;
+  @include grid(repeat(6, minmax(120px, 1fr)),0,0);
+  min-width: 100%;
+  gap: 0;
+  background-color:rgba(13, 29, 23, 1) ;
+  overflow: auto;
+      p{
+      border: 2px #000 solid;
+      margin: 0;
+      background-color: rgba(40, 40, 40, 1);
+      color: white;
+      height: 60px;
+      font-size: 0.7em;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      @include flex(0,0,center,center,0);
+        img{
+        height: 60px;
+        }
+      } 
+}
+
+.filtro{
+  @include flex(0,0,center,0,16px);
+  padding: 1rem;
+  gap: 1rem;
+  background-color: rgba(13, 29, 23, 1);
+      a{
+      background-color:map-get($color, sexto); ;
+      text-decoration: none;
+      border-radius: 10px;
+      padding: 0.5rem 1rem;
+      color:#000;
+      border: 1px black solid;
+      transition: background-color 0.3s;    
+    }
+      a:hover {
+      background-color:rgb(19, 167, 107);
+    }
+}

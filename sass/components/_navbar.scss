@@ -1,0 +1,71 @@
+.logo{
+  @include flex(0, wrap, center, center, 0);
+  background-color: #000;
+  width: 100%;
+    h1{
+      color: map-get($color, quinto);
+      font-size: 1.2rem;
+      font-weight: bold;
+      padding: 8px;
+      margin-top: 2px;
+    }
+}
+@-webkit-keyframes rotate-vert-center {
+  0% {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+@keyframes rotate-vert-center {
+  0% {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+
+.iconlogo{
+    padding: 5px;
+    justify-self: center;
+    align-self: center;
+    -webkit-animation: rotate-vert-center 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+	  animation: rotate-vert-center 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+        img{
+        height: 2em;
+        border-radius: 50%;        
+  }
+}
+
+.navlinks{
+  margin-top: 1rem;
+  @include flex(0,0,0,center,1.5rem);
+  background-color: map-get($color, principal);
+      a{
+      color:map-get($color, quinto);
+      font-weight: bold;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 0 1rem;
+      white-space: nowrap;
+      }
+      .searchnav{
+      background-color:map-get($color, septimo); ;
+      border-radius: 20px;
+      border: none;
+      padding: 6px 14px;
+      color:map-get($color, quinto);
+      }
+
+      .search-ico{
+      color:map-get($color, quinto);
+      margin-left: 15px;
+  }  
+}

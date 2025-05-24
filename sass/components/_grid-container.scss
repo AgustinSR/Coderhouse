@@ -1,0 +1,52 @@
+.grid-container {
+  @include grid(repeat(auto-fit, minmax(300px, 1fr)),null, 1em);
+  margin: 0 auto 3rem;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 1rem;
+
+    .search-container {
+    @include flex(column,null,null,center,1rem);
+    grid-column: 1 / -1;
+    padding: 2rem;
+    border-radius: 10px;
+  }
+    .searchtitle {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 2rem;
+    color:white
+  }
+    .iconlogo2 {
+    height: 2rem;
+  }
+
+  .searchplayer {
+    width: 100%;
+    max-width: 500px;
+    padding: 0.8rem 1.5rem;
+    border-radius: 30px;
+    border: none;
+    background-color: white;
+    color: white;
+    font-size: 1rem;
+  }
+  .stat-card {
+    background-color:rgba(5, 50, 32, 1) ;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin: 2rem 1rem;
+    text-align: center;
+    color:white;
+  }
+  .playername {
+    @include flex(column,0,space-between,center,0);
+    margin-bottom: 1rem;
+    
+      img {
+      height: 5rem;
+      border-radius: 50%;
+      }
+  }
+}

@@ -1,0 +1,7 @@
+.navbar{
+    @include flex(row,wrap,space-between,center,0);
+    padding:1rem 2rem;
+    border-bottom: 2px black solid;
+    box-shadow: 0 4px 6px -2px black;
+    background-color: map-get($color, principal);
+}

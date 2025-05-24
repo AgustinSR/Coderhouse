@@ -1,0 +1,17 @@
+@import "./utilities/variables";
+@import "./utilities/mixins";
+
+@import "./base/reset";
+@import "./base/typografia";
+
+@import "./layout/header";
+@import "./layout/footer";
+
+@import "./components/media";
+@import "./components/navbar";
+@import "./components/grid-container";
+@import "./components/recomended-tips";
+@import "./components/grid-leaderboard";
+@import "./components/container-heroes";
+@import "./components/contenido-builds";
+@import "./components/contenedor-tips";

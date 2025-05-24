@@ -1,0 +1,17 @@
+.footerepico{
+  background-color: map-get($color, cuaternario);
+  padding: 2rem;
+  color:map-get($color, sexto);
+  font-size: 1.5em;
+  text-align: center;
+  margin-top: auto;
+    .containersocial{
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    }
+
+  .copyright {
+    margin-bottom: 1rem;
+    }
+}

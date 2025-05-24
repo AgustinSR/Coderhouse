@@ -1,0 +1,109 @@
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 1rem;
+  }
+  
+  .navlinks {
+    gap: 1rem;
+  }
+  
+  .searchnav {
+    width: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .navlinks {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .search-container {
+    padding: 1.5rem;
+  }
+  
+  .searchtitle {
+    font-size: 1.5rem;
+  }
+  .grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+
+
+
+  
+  .contenedor-tips {
+    grid-template-columns: 250px 1fr;
+    padding: 1.875rem;
+  }
+  
+  .seccion-tags {
+    order: initial;
+  }
+  
+  .seccion-guias {
+    order: initial;
+  }
+  
+  .lista-tags {
+    grid-template-columns: 1fr;
+      li {
+        padding: 0.5rem 0;
+    }
+      img {
+        width: 40px;
+        height: 40px;
+        margin-right: 1rem;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    padding: 0rem;
+  }
+  
+  .navlinks a {
+    font-size: 0.9rem;
+  }
+
+  .searchnav, .searchplayer {
+    width: 100%;
+  }
+  
+  .stat-card {
+    padding: 1rem;
+  }
+  
+  .gridyt iframe {
+    height: 180px;
+  }
+
+  .searchtitle h2{
+    font-size: 0.9rem;
+  }
+  
+  
+}
+
+
+@media (min-width: 992px) {
+  .seccion-tags h2 {
+    font-size: 1.5rem;
+  }
+  
+  .carta-guia h3 {
+    font-size: 1.3rem;
+  }
+  
+  .lista-tags img {
+    width: 50px;
+    height: 50px;
+  }
+}

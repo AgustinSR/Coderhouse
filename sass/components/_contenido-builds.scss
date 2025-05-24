@@ -1,0 +1,53 @@
+.contenido-builds{
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+
+    .builds-container{
+      @include flex(column,0,0,0,3rem);
+        .build-card{
+          @include flex(0,0,space-between,center,0);
+          background-color:map-get($color,"terciario");
+          border-radius: 10px;
+          padding: 15px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+            .texto-build{
+              color: map-get($color,"sexto");
+              font-size: 2.5em;
+              font-weight: bold;      
+              margin-left: .625rem;     
+                img{
+                  margin-right: 3.125rem;
+                  border-radius: .625rem;
+                  height: auto;
+                  width: 30%;
+                }   
+            }
+        }
+
+    }
+}
+.flecha-btn{
+  background:none;
+  border: none;
+  cursor:pointer;
+  font-size: 4.4rem;
+}
+.flechas-votar{
+  display: flex;
+  flex-direction: column;
+}
+
+.contador-voto{
+  font-weight: bold;
+  color: #33ff00;
+  font-size: 5rem;
+}
+
+.build-voto{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
