@@ -92,6 +92,10 @@ body {
     height: 40px;
     margin-right: 1rem;
   }
+  .parche {
+    font-size: 0.8rem;
+    padding: 1.625rem;
+  }
 }
 @media (max-width: 480px) {
   main {
@@ -111,6 +115,10 @@ body {
   }
   .searchtitle h2 {
     font-size: 0.9rem;
+  }
+  .parche {
+    font-size: 0.8rem;
+    padding: 0.625rem;
   }
 }
 @media (min-width: 992px) {
@@ -415,68 +423,43 @@ body {
   text-align: center;
 }
 
-.contenido-builds {
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 20px;
-}
-.contenido-builds .builds-container {
+.parche {
   display: flex;
-  align-items: 0;
-  justify-content: 0;
-  flex-wrap: 0;
-  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
   flex-direction: column;
-}
-.contenido-builds .builds-container .build-card {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: 0;
-  gap: 0;
-  flex-direction: 0;
-  background-color: rgb(5, 50, 32);
-  border-radius: 10px;
-  padding: 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.contenido-builds .builds-container .build-card .texto-build {
-  color: rgb(243, 227, 198);
-  font-size: 2.5em;
-  font-weight: bold;
-  margin-left: 0.625rem;
-}
-.contenido-builds .builds-container .build-card .texto-build img {
-  margin-right: 3.125rem;
+  background-color: rgb(40, 40, 40);
+  margin: 2.5rem;
+  margin-left: 20%;
+  margin-right: 20%;
+  color: white;
   border-radius: 0.625rem;
-  height: auto;
-  width: 30%;
+}
+.parche h1 {
+  padding-top: 1.875rem;
+  text-align: center;
+}
+.parche h4 {
+  padding: 0 10px;
+  text-decoration: underline;
+  font-weight: normal;
+  color: white;
+}
+.parche li {
+  list-style-position: inside;
+}
+.parche ul {
+  padding: 0;
+  margin: 0 auto;
+}
+.parche h3 {
+  margin: 1.875rem;
 }
 
-.flecha-btn {
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-size: 4.4rem;
-}
-
-.flechas-votar {
-  display: flex;
-  flex-direction: column;
-}
-
-.contador-voto {
-  font-weight: bold;
-  color: #33ff00;
-  font-size: 5rem;
-}
-
-.build-voto {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+.parche-contenido {
+  padding: 1rem;
+  text-align: center;
 }
 
 .contenedor-tips {
